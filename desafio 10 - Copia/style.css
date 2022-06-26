@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-titulo-site: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+body{
+    
+    background-color: var(--cor0);
+}
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+ }
+ header{
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4), var(--cor5));
+    overflow: hidden;
+    min-width: none;
+    
+ }
+
+ header {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 9px;
+
+    flex-wrap: wrap;
+    padding: 20px;
+ }
+ header a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-family: var(--fonte-android);
+
+ }
+
+ 
+ .menu li:hover{
+   background-color: var(--cor3);
+   color: var(--cor5);
+   border-radius: 5px;
+   font-size: 17px;
+   text-shadow: 0px 1px 19px rgba(255, 255, 255, 0.355);
+
+ }
+
+
+ .menu {
+  display: flex;
+  color: rgb(30, 30, 30);
+  
+}
+
+.menu li{
+  margin-left: 10px;
+  list-style: none;
+  color: white;
+  font-family: var(--fonte-padrao);
+  font-size: 1em;
+  padding: 10px;
+ 
+
+}
+.menu li a{
+  color: white;
+  font-family: var(--fonte-padrao);
+  display: block;
+  padding: 1px;
+}
+ main{
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.441);
+    margin-bottom: 30px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius:10px ;
+
+ }
+ main> h1{
+   color: var(--cor5);
+    font-family: var(--fonte-android);
+    background-color: var(--cor2);
+    padding: 5px;
+    transition-duration: 0.7s;
+    transform-origin: center;
+    font-size: 25px;
+ }
+ 
+ main h2{
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding: 5px;
+    font-size: 1.3em;
+ }
+ main p{
+   font-family: var(--fonte-padrao);
+   font-size: 1em;
+   font-weight: 500;
+   margin: 15px 0px;
+   text-align: justify;
+   text-indent: 15px;
+   line-height: 1em;
+   padding-right: 30px;
+   
+
+ }
+ main > img.pequena{
+   max-width: 350px;
+   display: block;
+   margin: auto;
+ }
+ div.video {
+   background-color: var(--cor5);
+   margin: 0px -20px 30px -20px;
+   padding: 20px;
+   position: relative;
+   padding-bottom: 40%;
+ }
+ div.video> iframe{
+   position: absolute;
+   top: 5% ;
+   left: 15%;
+   width: 70%;
+   height: 90%;
+
+ }
+ section{
+  display: flex;
+  flex-wrap: wrap;
+
+ }
+ aside.as1{
+   background-color: rgb(123, 123, 123);
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281) ;
+   color: white;
+   width: 600px;
+   margin: auto;
+   
+  
+ }
+ aside.as1> h3{
+   background-color: rgb(89, 89, 89);
+   padding: 10px;
+   margin: -10px -10px 0px -10px;
+   border-radius: 10px 10px 0px 0px;
+   color: white;
+   font-family: var(--fonte-padrao);
+
+ }
+aside.as1 ul{
+   list-style: inside;
+   columns: 2;
+   list-style-type: '\2714\00a0\00a0';
+   
+   
+ }
+
+ footer{
+    color: white;
+    background-color: var(--cor5);
+    text-align: center;
+    font-size: 0.8em;
+    font-family: var(--fonte-padrao);
+    padding: 5px;
+    min-width: none;
+ }
+ picture > source{
+  margin: auto;
+  display: block;
+ }
+ aside.as2{
+  background-color: rgb(123, 123, 123);
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281) ;
+   color: white;
+   width: 300px;
+   margin: auto;
+   
+
+ }
+ aside.as2> h3{
+  background-color: rgb(89, 89, 89);
+   padding: 10px;
+   margin: -10px -10px 0px -10px;
+   border-radius: 10px 10px 0px 0px;
+   color: white;
+   font-family: var(--fonte-padrao);
+ }
+
