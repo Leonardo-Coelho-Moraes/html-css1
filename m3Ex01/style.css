@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body{
+    background-image: url(imagens/wallpaper003.jpg);
+}
+div.quadrado{
+    border: 1px solid black;
+    width: 400px;
+    height: 300px;
+    display: inline-flex;
+    border-radius: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+ 
+}
+.quadrado#q1{
+    background-image: linear-gradient( 120deg, #38424c, #b67ed6 );
+}
+.quadrado#q2{
+    background-image: linear-gradient( 120deg, #450a3b, #d9aac7);
+}
+.quadrado#q3{
+    background-image: linear-gradient( 120deg, #e9bcac, #d1c6f3);
+}
+.quadrado#q4{
+    background-image: url('imagens/pattern001.png');
+}
