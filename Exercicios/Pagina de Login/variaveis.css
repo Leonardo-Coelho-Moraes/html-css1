@@ -1,0 +1,239 @@
+@charset "UTF-8";
+:root {
+  --green: #04c35c;
+  --blue: #2b6cb0;
+
+  --white: #ffffff;
+  --white300: #f7fafc;
+
+  --dark: #1a202c;
+  --input: #e8e8e8;
+}
+@font-face {
+  font-family: 'Titulo';
+  src: url('fontes/Merriweather-Regular.ttf') format('opentype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Form';
+  src: url('fontes/Lato-Regular.ttf') format('opentype');
+  font-weight: normal;
+}
+@media only screen and (max-width:800px)
+{
+  .imagem{
+    display: none;
+  }
+  .container{
+    display: flex;
+    position: absolute;
+   
+   margin-left: 20vw;
+   margin-right: 20vw;
+    
+  }
+}
+@media only screen and (max-width:600px)
+{
+  .imagem{
+    display: none;
+  }
+  .container{
+    display: flex;
+    position: absolute;
+   
+   margin-left: 10vw;
+   margin-right: 15vw;
+    
+  }
+}
+@media only screen and (max-width:485px)
+{
+  .imagem{
+    display: none;
+  }
+  .container{
+    display: flex;
+    position: absolute;
+    padding-right: 10px;
+   margin-left: 4vw;
+   margin-right: 4vw;
+    
+  }
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+}
+
+button:focus,
+input:focus {
+  border: 0;
+}
+.container{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "m n";
+  height: 100vh;
+
+}
+.imagem{
+  width: 100%;
+  padding-top: 20%;
+  grid-area: m;
+  background-color: var(--white300);
+  
+}
+.cadastro{
+  width: 100%;
+  padding-top: 20%;
+  grid-area: n;
+
+}
+.conteudo{
+ 
+  margin: auto;
+  max-width: 400px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "a a" "b b" "c c" "d d" "e e" "f f" "g h" "i i" "j j" "k k";
+}
+#a1{
+  font-family: Titulo;
+  font-weight: 400;
+  font-size: 1em;
+  width: 400px;
+  grid-area: a;
+  width: 400px;
+  margin-bottom: 5px;
+}
+#a2{
+  
+  font-family: Titulo;
+  font-weight: 600;
+  font-size: 1.6em;
+  width: 400px;
+  grid-area: b;
+  margin-bottom: 20px;
+}
+#a3{
+  font-family: Form;
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 5px;
+  width: 400px;
+  grid-area: c;
+}
+#a4{
+  
+  margin-bottom: 5px;
+  width: 100%;
+  height: 50px;
+  grid-area: d;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#a5{
+  font-family: Form;
+  font-weight: 400;
+  font-size: 1em;
+  width: 400px;
+  margin-bottom: 5px;
+  grid-area: e;
+}
+#a6{
+  
+  margin-bottom: 20px;
+  height: 50px;
+  width: 100%;
+  grid-area: f;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#a7{
+  text-align: start;
+  grid-area: g;
+  margin-bottom: 20px;
+  font-family: Form;
+  font-weight: 400;
+  font-size: 14px;
+}
+#a8{
+  text-align: end;
+  grid-area: h;
+  margin-bottom: 20px;
+  font-family: Form;
+  font-weight: 400;
+  font-size: 14px;
+}
+#a9{
+  color: white;
+  font-family: Form;
+  font-weight: 400;
+  font-size: 1em;
+  width: 100%;
+  grid-area: i;
+  height: 50px;
+  background-color: var(--green);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#a10{
+  color: white;
+  font-family: Form;
+  font-weight: 400;
+  font-size: 1em;
+  width: 100%;
+  grid-area: j;
+  height: 50px;
+  background-color: var(--dark);
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 50px;
+  cursor: pointer;
+  
+}
+#a11{
+  color: black;
+  font-family: Form;
+  font-weight: 400;
+  font-size: 1em;
+  width: 400px;
+  grid-area: k;
+  text-align: center;
+}
+
