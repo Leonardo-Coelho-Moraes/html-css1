@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Inter ;
+    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+    font-family: Lexend-Deca;
+    src: url("../fonts/LexendDeca-VariableFont_wght.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #FEFBFB;
+}

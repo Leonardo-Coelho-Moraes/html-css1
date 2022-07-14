@@ -1,0 +1,82 @@
+@import url(base.css);
+:root{
+    --cor1:#8257E6;
+    --cor2:#FEFBFB;
+    --cor3:#C4C4C4;
+    --cor4:#13131F;
+
+}
+
+body{
+    width: 100%;
+    background-color: var(--cor4);
+}
+header{
+    justify-content: flex-start;
+    align-items: center;
+    height: 90px;
+    max-width: 100%;
+    width: 1100px;
+    display: flex;
+    margin: auto;
+} 
+header>a> h1{ 
+   font: normal 400 28px/32px Lexend-Deca, sans-serif;
+   color: var(--cor1);
+   margin-right: 296px;
+}
+header> div{
+    display: flex;
+    flex-direction: row;
+    width: 585px;
+    max-width: 100%;
+}
+header> div> a{
+    color: white;
+    font: normal 500 16px/19px Inter, sans-serif;
+}
+header> div> a:nth-child(2){
+    margin-left: 60px;
+    margin-right: 60px;
+}
+header> div> a:nth-child(4){
+    margin-left: 60px;
+    margin-right: 60px;
+}
+header> div> a:nth-child(5){
+    margin-right: 80px;
+}
+header> button{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 120px;
+    height: 25px;
+    max-width: 100%;
+    border-radius: 12px;
+    background-color: var(--cor4);
+    border: 1px solid #8257E6;
+    font: normal 400 14px/ 17.5px Lexend-Deca, sans-serif;
+    cursor: pointer;
+}
+.descricao{
+    align-items: center;
+    display: flex;
+    max-width: 100%;
+    width: 1100px;
+    margin: auto;
+    height: 355px;
+}
+.descricao h1{
+    font: normal 400 48px/60px Lexend-Deca, sans-serif;
+    max-width: 320px;
+    margin-bottom: 11px;
+}
+.descricao p{
+    max-width: 500px;
+    color: var(--cor3);
+    font: normal 500 20px/32px Inter, sans-serif;
+
+
+}
