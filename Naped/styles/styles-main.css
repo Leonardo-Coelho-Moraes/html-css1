@@ -7,10 +7,7 @@
 
 }
 
-body{
-    width: 100%;
-    background-color: var(--cor4);
-}
+
 ::-webkit-scrollbar{
     width: 8px;
 }
@@ -66,6 +63,12 @@ header> div> a:nth-child(5){
     font: normal 400 14px/ 17.5px Lexend-Deca, sans-serif;
     cursor: pointer;
 }
+.barras{
+    display: none;
+    width: 24px;
+    height: 24px;
+}
+/* start bloco 1 */
 .descricao{
     align-items: center;
     display: flex;
@@ -96,38 +99,98 @@ header> div> a:nth-child(5){
     margin: auto;
 }
 .notice-a{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     grid-area: a;
-    border: 1px solid red;
     width: 761px;
     height: 350px;
-    background: rgba(19, 19, 31, 0 4 360deg) url(../images/bloco-s-1.jpg) no-repeat center ;
-    background-blend-mode: lighten;
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/bloco-s-1.jpg');
 }
-.notice-a img{
-    width: 100%;
-    height: 100%;
+.notice-a button{
+    margin-top: 17px;
+    margin-left: 30px;
+    cursor: pointer;
+    font: normal 400 14px/18px Lexend-Deca, sans-serif;
+    width: 80px;
+    height: 25px;
+    background: #8257E6;
+    border-radius: 3px;
+    border: none;
 }
-.notice-b img{
-    width: 100%;
-    height: 100%;
-}
-.notice-c img{
-    width: 100%;
-    height: 100%;
+.notice-a h1{
+    width: 701px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    font: normal 400 24px/34px Lexend-Deca, sans-serif;
+
 }
 .notice-b{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     grid-area: b;
-    border: 1px solid red;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 338px;
     height: 165px;
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/bloco-s-2.jpg');
     
 }
+.notice-b button{
+    margin-left: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font: normal 400 12px/15px Lexend-Deca, sans-serif;
+    width: 70px;
+    height: 20px;
+    background: #8257E6;
+    border-radius: 3px;
+    border: none;
+}
+.notice-b h1{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    width: 303px;
+    font: normal 400 13px/20px Lexend-Deca, sans-serif;
+
+}
 .notice-c{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     grid-area: c;
-    border: 1px solid red;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/bloco-s-3.jpg');
     width: 338px;
     height: 165px;
 }
+.notice-c button{
+    margin-left: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font: normal 400 12px/15px Lexend-Deca, sans-serif;
+    width: 70px;
+    height: 20px;
+    background: #8257E6;
+    border-radius: 3px;
+    border: none;
+}
+.notice-c h1{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    width: 303px;
+    font: normal 400 13px/20px Lexend-Deca, sans-serif;
+
+}
+/* end bloco 1 */
+/* start main */
 main{
     grid-column-gap: 20px;
     display: grid;
@@ -138,6 +201,8 @@ main{
     width: 1120px;
     height: 895px;
     margin: 50px auto 0 auto;
+    justify-content: space-between;
+    grid-column-gap: 22px;
 }
 .principal{
     display: flex;
@@ -156,7 +221,6 @@ main{
     height: 170px;
     max-width: 100%;
     width:612px ;
-    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -164,22 +228,19 @@ main{
 .principal-notices h2{
     padding-bottom: 13px;
     width: 394px;
-font-family: Lexend-Deca;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
+    font: normal 400 14px/20px Lexend-Deca, sans-serif;
 
 }
 .principal-notices h3{
     padding-bottom: 9px;
     width: 330px;
-font-family: Inter;
-font-style: normal;
-font-weight: 400;
-font-size: 11px;
-line-height: 16px;
-color: var(--cor3);
+    font: normal 400 11px/16px Inter, sans-serif;
+    color: var(--cor3);
+}
+.principal-notices h4{
+    display: none;
+    width: 150px;
+    font: normal 400 15px/18px Lexend-Deca, sans-serif;
 }
 .principal-notices p{
     padding-bottom: 7px;
@@ -194,21 +255,116 @@ color: var(--cor3);
 .principal-notices button{
     width: 100px;
     height: 25px;
+    font: normal 600 11px/20px Inter, sans-serif;
     background: var(--cor1);
     border-radius: 3px;
     border: none;
+    cursor: pointer;
 }
-.principal-notices img{
+.principal-notices> div{
+    width: 170px;
+    height: 170px;
     margin-right: 18px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.principal-n-1{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/principal-c-1.jpg');
+}
+.principal-n-2{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/principal-c-2.jpg');
+}
+.principal-n-3{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/principal-c-3.jpg');
+}
+.principal-n-4{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/principal-c-4.jpg');
+}
+.principal-n-5{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/principal-c-5.jpg');
+}
+.principal-n-6{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/principal-c-1.jpg');
+}
+.principal-n-7{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/principal-c-2.jpg');
+}
+.principal-n-8{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/principal-c-3.jpg');
+}
+.principal-n-9{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/principal-c-4.jpg');
+}
+.principal-n-10{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/principal-c-5.jpg');
 }
 .sidebar{
+    flex-direction: column;
     display: flex;
     height: 895px;
-    border: 1px solid red;
     max-width: 100%;
     width: 338px;
     grid-area: b;
 }
+.sidebar> h1{
+    font: normal 400 24px/20px Lexend-Deca, sans-serif;
+    padding-bottom: 13px;
+    border-bottom:3px solid #8257E6;
+    width: max-content;
+}
+.sidebar-conteudo{    
+    display: grid;
+    grid-template-columns: 0fr;
+    grid-template-rows: 0fr 0fr;
+    grid-row-gap: 47px;
+    margin: 14px auto 0 auto;
+    max-width: 100%;
+    height: 858px;
+    width: 338px;
+
+}
+.sidebar-conteudo> div{  
+    max-width: 100%;
+    width: 338px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sidebar-conteudo> div> button{
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font: normal 400 12px/15px Lexend-Deca, sans-serif;
+    width: 70px;
+    height: 20px;
+    background: #8257E6;
+    border-radius: 3px;
+    border: none;
+
+}
+.sidebar-conteudo> div> h1{
+    margin-left:15px ;
+    margin-bottom: 10px;
+    width: 303px;
+    font: normal 400 13px/20px Lexend-Deca, sans-serif;
+}
+.s-c-1{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/sidebar-conteudo-1.jpg'); 
+}
+.s-c-2{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/sidebar-conteudo-2.jpg');
+}
+.s-c-3{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/sidebar-conteudo-3.jpg');
+}
+/* end main */
+/* start section: bloco-inferior*/
 .bloco-inferior{
     display: flex;
     flex-direction: column;
@@ -216,10 +372,8 @@ color: var(--cor3);
     margin: 100px auto 0 auto;
     width: 1120px;
     height: 779px;
-    
-    
 }
-.bloco-inferior h1{
+.bloco-inferior> h1{
     font:normal 400 24px/20px Lexend-Deca, sans-serif;
     border-bottom:3px solid #8257E6;
     padding-bottom: 13px;
@@ -236,24 +390,181 @@ color: var(--cor3);
     max-width: 100%;
     height: 718px;
     width: 1120px;
-    
 }
-.conteudo-b-inferior> div{
-    border: 1px solid red;  
+.conteudo-b-inferior> div{ 
     max-width: 100%;
     width: 338px;
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-footer{
-    height: 135px;
+.conteudo-b-inferior> div> h2{
+    margin-left:15px ;
+    margin-bottom: 10px;
+    width: 303px;
+    font: normal 400 13px/20px Lexend-Deca, sans-serif;
+
+}
+.conteudo-b-inferior> div> button{
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font: normal 400 12px/15px Lexend-Deca, sans-serif;
+    width: 70px;
+    height: 20px;
+    background: #8257E6;
+    border-radius: 3px;
+    border: none;
+}
+.bloco-i-1{  
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/bloco-i-1.jpg');
+}
+.bloco-i-2{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/bloco-i-2.jpg');
+}
+.bloco-i-3{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/bloco-i-3.jpg');
+}
+.bloco-i-4{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/bloco-i-4.jpg');
+}
+.bloco-i-5{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/bloco-i-5.jpg');
+}
+.bloco-i-6{
+    background-image:linear-gradient(360deg,  #13131F 0% ,rgba(18, 19, 31, 0) 100% ),url('../images/bloco-i-6.jpg');
+}
+/* end section: bloco-inferior*/
+.footer{
+    height: 100px;
     text-align: center;
+    margin: auto;
 }
-footer> h1{
+.footer> h1{
     font: normal 400 24px/30px Lexend-Dexa, sans-serif;
     color: var(--cor1);
     padding-bottom: 16px;
 }
-footer> p{
+.footer> p{
     font: normal 400 16px/24px Inter, sans-serif;
 }
+@media (max-width:480px){
+    header{
+        justify-content: space-between;
+        width: 400px;
+        margin: auto;
+        max-width: 100%;
+    }
+    .descricao{
+        width: 400px;
+        max-width: 100%;
+
+    }
+    header> div{
+        display: none;
+    }
+    header>a> h1{ 
+        font: normal 400 28px/32px Lexend-Deca, sans-serif;
+        color: var(--cor1);
+     }
+    .barras{
+        display: flex;
+    }
+    .bloco-superior{
+        height: 350px;
+        width: 400px;
+        display: grid;
+        grid-template-columns: 0fr;
+        grid-template-rows: 0fr ;
+        grid-template-areas: "a";
+        margin: auto;
+        max-width: 100%;
+    }
+    .notice-a{
+        grid-area: a;
+        height: 350px;
+        width: 400px;
+        max-width: 100%;
+    }
+    .notice-a h1{
+        width: 288px;
+        margin-left: 30px;
+        margin-bottom: 15px;
+        font: normal 400 14px/18px Lexend-Deca, sans-serif;
+    }
+    .notice-b{
+        display: none;
+    }
+    .notice-c{
+        display: none;
+    }
+    main{
+        width: 400px;
+        max-width: 100%;
+        margin: 40px auto 0 auto;
+    }
+    .sidebar{
+        display: none;
+    }
+    .principal{
+        width: 400px;
+        max-width: 100%;
+
+    }
+    .principal-notices{
+        display: flex;
+        width: 3677px;
+        max-width: 100%;
+        margin-bottom: 24px;
+        justify-content: space-around;
+    }
+    .principal-notices h3{
+        display: none;
+    }
+    .principal-notices h2{
+        display: none;
+    }
+    .principal-notices h4{
+        display: flex;
+    }
+    .principal-notices> div{
+        margin-right: 8px;
+        width: 140px;
+        height: 140px;
+    }
+    .bloco-inferior{
+        width: 338px;
+        max-width: 100%;
+    }
+    .conteudo-b-inferior{
+        padding-top: 30px;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 100%;
+        height: max-content;
+        width: 338px;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        grid-column-gap: none;
+    }
+    .conteudo-b-inferior h1{
+        margin: auto;
+    }
+    .conteudo-b-inferior> div{
+        margin: auto;
+    }
+    .footer{
+        width: 400px;
+        max-width: 100%;
+    }
+  
+}
+
+
 
